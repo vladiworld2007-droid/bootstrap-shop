@@ -1,0 +1,13 @@
+/* Небольшие дополнения к Bootstrap для ТехноЛавки */
+:root { --shop-accent: #6c63ff; }
+body { min-height: 100vh; }
+.brand-mark { display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: .65rem; color: #fff; background: var(--shop-accent); }
+.hero-panel { min-height: 100%; }
+.hero-image { max-height: 260px; }
+.product-visual { display: flex; align-items: center; justify-content: center; min-height: 190px; padding: 1.25rem; background: linear-gradient(145deg, #f3f5ff, #fff); }
+.product-visual img { width: 100%; height: 170px; object-fit: contain; }
+.product-visual--large { min-height: 360px; }
+.product-visual--large img { height: 320px; }
+.product-card { transition: transform .18s ease, box-shadow .18s ease; }
+.product-card:hover { transform: translateY(-3px); }
+@media (prefers-reduced-motion: reduce) { .product-card { transition: none; } .product-card:hover { transform: none; } }
