@@ -1,1 +1,200 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Учебный адаптивный интернет-магазин техники на Bootstrap."><meta name="theme-color" content="#16243a"><title>Главная — ТехноЛавка</title><link rel="icon" href="images/mark.svg" type="image/svg+xml"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/custom.css"></head><body class="d-flex flex-column min-vh-100"><header class="bg-primary text-white py-4"><div class="container"><div class="row align-items-center g-3"><div class="col-12 col-md-8"><h1 class="h3 mb-1">ТехноЛавка</h1><p class="mb-0 opacity-75">Техника для работы, учёбы и отдыха</p></div><div class="col-12 col-md-4 text-md-end"><span class="badge bg-light text-primary fs-6">КР №2 · Bootstrap</span></div></div></div></header><nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Основная навигация"><div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark me-2">Т</span>ТехноЛавка</a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="mainNavbar"><ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2"><li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li><li class="nav-item"><a class="nav-link "  href="catalog.html">Каталог</a></li><li class="nav-item"><a class="nav-link "  href="product.html">Товар</a></li><li class="nav-item"><a class="nav-link "  href="order.html">Заявка</a></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Дополнительно</a><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="catalog.html">Все товары</a></li><li><a class="dropdown-item" href="order.html">Оформить заявку</a></li><li><a class="dropdown-item" href="index.html#popular">Популярное</a></li></ul></li></ul></div></div></nav><main><section class="container-fluid bg-body-tertiary py-5"><div class="container"><div class="row align-items-center g-4"><div class="col-12 col-lg-6"><p class="text-primary text-uppercase fw-semibold small mb-2">Удобные технологии каждый день</p><h2 class="display-5 fw-bold">Найдите технику для своих задач</h2><p class="lead text-secondary">Сравните наушники, умные устройства и аксессуары в каталоге ТехноЛавки.</p><a class="btn btn-primary btn-lg" href="catalog.html">Перейти в каталог</a></div><div class="col-12 col-lg-6"><div class="hero-panel p-4 p-md-5 bg-light border rounded-4 text-center"><img src="images/headphones.svg" class="img-fluid hero-image" alt="Наушники Sonic Pro"><p class="mb-0 mt-3 text-secondary">Подборка техники для повседневных задач</p></div></div></div></div></section><section class="container my-5" id="advantages"><h2 class="text-center mb-4">Преимущества проекта</h2><div class="row g-4"><div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><span class="badge text-bg-primary mb-3">01</span><h3 class="h5">Понятный выбор</h3><p class="mb-0 text-secondary">У товаров есть описание, цена и статус наличия.</p></div></div><div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><span class="badge text-bg-primary mb-3">02</span><h3 class="h5">Адаптивная сетка</h3><p class="mb-0 text-secondary">Bootstrap перестраивает колонки под экран.</p></div></div><div class="col-12 col-md-4"><div class="p-4 border rounded-4 h-100 bg-white"><span class="badge text-bg-primary mb-3">03</span><h3 class="h5">Быстрая заявка</h3><p class="mb-0 text-secondary">Форму можно открыть из каталога или заполнить отдельно.</p></div></div></div></section><section class="container my-5" id="popular"><div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4"><div><p class="text-primary text-uppercase fw-semibold small mb-1">Выбор покупателей</p><h2 class="mb-0">Популярные товары</h2></div><a class="btn btn-outline-primary" href="catalog.html">Все товары</a></div><div class="row g-4"><div class="col-12 col-md-6 col-lg-4"><article class="card product-card h-100 shadow-sm"><a class="product-visual" href="product.html" aria-label="Подробнее: Наушники Sonic Pro"><img src="images/headphones.svg" class="card-img-top" alt="Наушники Sonic Pro" loading="lazy"></a><div class="card-body d-flex flex-column"><div class="d-flex justify-content-between align-items-start gap-2 mb-2"><span class="small text-uppercase text-secondary">Аудио</span><span class="badge text-bg-success">Хит продаж</span></div><h2 class="card-title h5"><a class="link-dark link-underline-opacity-0" href="product.html">Наушники Sonic Pro</a></h2><p class="card-text text-secondary">Чистый звук и удобная посадка на каждый день.</p><div class="mt-auto d-flex justify-content-between align-items-center gap-2 pt-2"><span class="fs-5 fw-bold text-nowrap">8 490 ₽</span><div class="d-flex flex-wrap gap-2"><a class="btn btn-primary" href="product.html">Подробнее</a><a class="btn btn-outline-primary" href="order.html">Заявка</a></div></div></div></article></div><div class="col-12 col-md-6 col-lg-4"><article class="card product-card h-100 shadow-sm"><a class="product-visual" href="product.html" aria-label="Подробнее: Смарт-часы Pulse 2"><img src="images/watch.svg" class="card-img-top" alt="Смарт-часы Pulse 2" loading="lazy"></a><div class="card-body d-flex flex-column"><div class="d-flex justify-content-between align-items-start gap-2 mb-2"><span class="small text-uppercase text-secondary">Носимые устройства</span><span class="badge text-bg-primary">Новинка</span></div><h2 class="card-title h5"><a class="link-dark link-underline-opacity-0" href="product.html">Смарт-часы Pulse 2</a></h2><p class="card-text text-secondary">Контроль активности, уведомления и до 7 дней работы.</p><div class="mt-auto d-flex justify-content-between align-items-center gap-2 pt-2"><span class="fs-5 fw-bold text-nowrap">6 990 ₽</span><div class="d-flex flex-wrap gap-2"><a class="btn btn-primary" href="product.html">Подробнее</a><a class="btn btn-outline-primary" href="order.html">Заявка</a></div></div></div></article></div><div class="col-12 col-md-6 col-lg-4"><article class="card product-card h-100 shadow-sm"><a class="product-visual" href="product.html" aria-label="Подробнее: Колонка SoundGo"><img src="images/speaker.svg" class="card-img-top" alt="Колонка SoundGo" loading="lazy"></a><div class="card-body d-flex flex-column"><div class="d-flex justify-content-between align-items-start gap-2 mb-2"><span class="small text-uppercase text-secondary">Аудио</span><span class="badge text-bg-danger">−15%</span></div><h2 class="card-title h5"><a class="link-dark link-underline-opacity-0" href="product.html">Колонка SoundGo</a></h2><p class="card-text text-secondary">Компактная колонка с насыщенным звуком и защитой от брызг.</p><div class="mt-auto d-flex justify-content-between align-items-center gap-2 pt-2"><span class="fs-5 fw-bold text-nowrap">3 990 ₽</span><div class="d-flex flex-wrap gap-2"><a class="btn btn-primary" href="product.html">Подробнее</a><a class="btn btn-outline-primary" href="order.html">Заявка</a></div></div></div></article></div></div></section></main><footer class="bg-dark text-white py-4 mt-auto"><div class="container"><div class="row align-items-center g-3"><div class="col-12 col-md-6"><p class="mb-0">© 2026 ТехноЛавка. Учебный проект.</p></div><div class="col-12 col-md-6 text-md-end d-flex flex-wrap gap-3 justify-content-md-end"><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="catalog.html">Каталог</a><a class="link-light link-underline-opacity-0 link-underline-opacity-75-hover" href="order.html">Оставить заявку</a></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Ветеринарная клиника Лапа рядом — бережный приём, диагностика и профилактика для домашних животных.">
+  <meta name="theme-color" content="#164b43">
+  <title>Лапа рядом — ветеринарная клиника</title>
+  <link rel="icon" href="images/mark.svg" type="image/svg+xml">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar navbar-expand-lg navbar-dark clinic-nav sticky-top" aria-label="Основная навигация">
+    <div class="container"><a class="navbar-brand fw-bold" href="index.html"><span class="brand-mark me-2"
+          aria-hidden="true">🐾</span>Лапа рядом</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Услуги</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Приём терапевта</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Запись</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+        </ul><button class="btn btn-warm ms-lg-3 mt-3 mt-lg-0" type="button" data-bs-toggle="modal"
+          data-bs-target="#appointmentModal" data-service="Первичный приём терапевта">Записать питомца</button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero-section py-5">
+      <div class="container py-lg-4">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-6">
+            <p class="eyebrow">Здоровье питомца — наша забота</p>
+            <h1 class="display-4 fw-bold lh-sm">Ветеринарная клиника <span class="text-leaf">«Лапа рядом»</span></h1>
+            <p class="lead text-secondary mt-3">Спокойный приём, понятные рекомендации и бережное отношение к каждому
+              хвостику.</p>
+            <div class="d-flex flex-wrap gap-3 mt-4"><a class="btn btn-leaf btn-lg" href="catalog.html">Посмотреть
+                услуги</a><a class="btn btn-outline-leaf btn-lg" href="order.html">Записаться</a></div>
+            <div class="row g-3 mt-4">
+              <div class="col-4"><strong class="d-block fs-4">12 лет</strong><span
+                  class="small text-secondary">заботимся о питомцах</span></div>
+              <div class="col-4"><strong class="d-block fs-4">7 дней</strong><span class="small text-secondary">работаем
+                  без выходных</span></div>
+              <div class="col-4"><strong class="d-block fs-4">4,9/5</strong><span class="small text-secondary">оценка
+                  посетителей</span></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="hero-art p-4 p-md-5 rounded-5 text-center"><img src="images/clinic.svg" class="img-fluid"
+                alt="Иллюстрация ветеринарной клиники и домашнего питомца">
+              <p class="mb-0 mt-3 fw-semibold">Принимаем кошек, собак и других домашних животных</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container py-5" aria-labelledby="benefits-title">
+      <div class="text-center mb-4">
+        <p class="eyebrow">Почему нас выбирают</p>
+        <h2 id="benefits-title" class="fw-bold">Забота на каждом этапе</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body p-4"><span class="feature-icon" aria-hidden="true">♡</span>
+              <h3 class="h5 mt-3">Бережный подход</h3>
+              <p class="text-secondary mb-0">Объясняем каждый шаг и учитываем характер питомца.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body p-4"><span class="feature-icon" aria-hidden="true">✚</span>
+              <h3 class="h5 mt-3">Опытные врачи</h3>
+              <p class="text-secondary mb-0">Специалисты учатся и работают по современным протоколам.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="card h-100 border-0 shadow-sm feature-card">
+            <div class="card-body p-4"><span class="feature-icon" aria-hidden="true">⌂</span>
+              <h3 class="h5 mt-3">Всё в одном месте</h3>
+              <p class="text-secondary mb-0">Приём, базовая диагностика и профилактика в одной клинике.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="container py-5" id="popular" aria-labelledby="services-title">
+      <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+        <div>
+          <p class="eyebrow">Помогаем каждый день</p>
+          <h2 id="services-title" class="fw-bold mb-0">Популярные услуги</h2>
+        </div><a class="btn btn-outline-leaf" href="catalog.html">Все услуги</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 service-card"><img src="images/consultation.svg" class="card-img-top service-image"
+              alt="Ветеринар осматривает собаку" loading="lazy">
+            <div class="card-body d-flex flex-column"><span
+                class="badge text-bg-success align-self-start mb-2">Популярно</span>
+              <h3 class="h5">Первичный приём</h3>
+              <p class="text-secondary">Осмотр питомца, сбор истории и план дальнейших действий.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center"><strong>от 1 800 ₽</strong><a
+                  class="btn btn-sm btn-leaf" href="product.html">Подробнее</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 service-card"><img src="images/vaccination.svg" class="card-img-top service-image"
+              alt="Ветеринарная вакцинация питомца" loading="lazy">
+            <div class="card-body d-flex flex-column"><span
+                class="badge text-bg-primary align-self-start mb-2">Профилактика</span>
+              <h3 class="h5">Вакцинация</h3>
+              <p class="text-secondary">Подбор вакцины и плановая прививка после осмотра врача.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center"><strong>от 1 500 ₽</strong><a
+                  class="btn btn-sm btn-leaf" href="catalog.html">Все услуги</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 service-card"><img src="images/diagnostics.svg" class="card-img-top service-image"
+              alt="Диагностическое оборудование в клинике" loading="lazy">
+            <div class="card-body d-flex flex-column"><span
+                class="badge text-bg-warning align-self-start mb-2">Диагностика</span>
+              <h3 class="h5">УЗИ-обследование</h3>
+              <p class="text-secondary">Безопасная диагностика по направлению ветеринарного врача.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center"><strong>от 2 200 ₽</strong><a
+                  class="btn btn-sm btn-leaf" href="catalog.html">Все услуги</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="clinic-cta py-5">
+      <div class="container">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-lg-8">
+            <h2 class="fw-bold">Питомцу нужен осмотр?</h2>
+            <p class="mb-0">Оставьте заявку — администратор поможет выбрать время и подготовиться к приёму.</p>
+          </div>
+          <div class="col-12 col-lg-4 text-lg-end"><a class="btn btn-warm btn-lg" href="order.html">Записаться на
+              приём</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="clinic-footer mt-auto py-4">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6"><a class="navbar-brand fw-bold text-white" href="index.html">🐾 Лапа рядом</a>
+          <p class="small text-white-50 mb-0">Учебный проект ветеринарной клиники</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end"><a class="link-light me-3" href="contacts.html">Контакты</a><a
+            class="link-light" href="order.html">Запись на приём</a></div>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form class="js-demo-form">
+          <div class="modal-header">
+            <div>
+              <p class="eyebrow mb-1">Быстрая запись</p>
+              <h2 class="modal-title fs-5" id="appointmentModalLabel">Записать питомца</h2>
+            </div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            <p class="alert alert-info" role="status">Мы перезвоним для подтверждения. Форма демонстрационная.</p><input
+              type="hidden" id="modal-service" name="service">
+            <div class="mb-3"><label for="modal-owner" class="form-label">Ваше имя</label><input id="modal-owner"
+                name="owner" class="form-control" autocomplete="name" required></div>
+            <div class="mb-3"><label for="modal-phone" class="form-label">Телефон</label><input id="modal-phone"
+                name="phone" class="form-control" type="tel" autocomplete="tel" required></div>
+            <div class="form-check"><input id="modal-agreement" class="form-check-input" type="checkbox" required><label
+                class="form-check-label" for="modal-agreement">Согласен на обработку данных</label></div>
+            <p class="alert alert-success mt-3 mb-0 d-none" role="status" data-form-status>Форма заполнена. В учебной
+              версии заявка не отправляется.</p>
+          </div>
+          <div class="modal-footer"><button class="btn btn-outline-secondary" type="button"
+              data-bs-dismiss="modal">Отмена</button><button class="btn btn-leaf" type="submit">Отправить
+              заявку</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
