@@ -10,6 +10,12 @@
 - `order.html` — форма записи с данными владельца и питомца.
 - `contacts.html` — контактная информация и часы работы.
 
+## Ссылки
+
+**Опубликованный сайт:** https://vladiworld2007-droid.github.io/bootstrap-shop/
+
+**GitHub-репозиторий:** https://github.com/vladiworld2007-droid/bootstrap-shop
+
 ## Bootstrap-компоненты
 
 Используются `container`, `row`, адаптивные `col-*`, `navbar`, `card`, `btn`, `badge`, `alert`, `modal`, `accordion`, `form-control`, `form-select`, `input-group` и `form-check`. Собственные правила находятся в `css/custom.css`, подключённом после Bootstrap. Интерактивные компоненты работают через Bootstrap JS Bundle, подключённый через CDN.
