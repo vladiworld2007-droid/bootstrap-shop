@@ -1,14 +1,21 @@
-// Демонстрация формы без отправки персональных данных на сервер.
+// Демонстрационная запись: форма проверяется в браузере и не отправляет данные.
 document.addEventListener('DOMContentLoaded', () => {
-  const productInput = document.getElementById('modal-product');
-  const title = document.getElementById('orderModalLabel');
-  document.querySelectorAll('[data-bs-target="#orderModal"]').forEach((button) => {
+  const serviceSelect = document.getElementById('visit-service');
+  const modalService = document.getElementById('modal-service');
+  const modalTitle = document.getElementById('appointmentModalLabel');
+
+  document.querySelectorAll('[data-bs-target="#appointmentModal"]').forEach((button) => {
     button.addEventListener('click', () => {
-      const product = button.dataset.product || '';
-      if (productInput) productInput.value = product;
-      if (title) title.textContent = product ? `Заявка: ${product}` : 'Быстрая заявка';
+      const service = button.dataset.service || '';
+      if (modalService) modalService.value = service;
+      if (modalTitle) modalTitle.textContent = service ? `Запись: ${service}` : 'Записать питомца';
+      if (serviceSelect && service) {
+        const option = [...serviceSelect.options].find((item) => item.text === service);
+        if (option) serviceSelect.value = option.value || option.text;
+      }
     });
   });
+
   document.querySelectorAll('.js-demo-form').forEach((form) => {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
@@ -21,4 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (status) status.classList.add('d-none');
     });
   });
+
+  const params = new URLSearchParams(window.location.search);
+  if (serviceSelect && params.get('service') === 'consultation') {
+    serviceSelect.value = 'Первичный приём терапевта';
+  }
 });

@@ -1,13 +1,334 @@
-/* Небольшие дополнения к Bootstrap для ТехноЛавки */
-:root { --shop-accent: #6c63ff; }
-body { min-height: 100vh; }
-.brand-mark { display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: .65rem; color: #fff; background: var(--shop-accent); }
-.hero-panel { min-height: 100%; }
-.hero-image { max-height: 260px; }
-.product-visual { display: flex; align-items: center; justify-content: center; min-height: 190px; padding: 1.25rem; background: linear-gradient(145deg, #f3f5ff, #fff); }
-.product-visual img { width: 100%; height: 170px; object-fit: contain; }
-.product-visual--large { min-height: 360px; }
-.product-visual--large img { height: 320px; }
-.product-card { transition: transform .18s ease, box-shadow .18s ease; }
-.product-card:hover { transform: translateY(-3px); }
-@media (prefers-reduced-motion: reduce) { .product-card { transition: none; } .product-card:hover { transform: none; } }
+/* Собственные стили клиники поверх Bootstrap */
+:root {
+    --clinic-green: #164b43;
+    --clinic-leaf: #237a62;
+    --clinic-pale: #e9f4ef;
+    --clinic-warm: #f3b95f;
+    --clinic-ink: #1d302b;
+}
+
+body {
+    color: var(--clinic-ink);
+}
+
+.clinic-nav,
+.clinic-footer {
+    background: var(--clinic-green);
+}
+
+.brand-mark {
+    display: inline-grid;
+    width: 2.2rem;
+    height: 2.2rem;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .16);
+    font-size: 1.2rem;
+}
+
+.btn-leaf {
+    color: #fff;
+    background: var(--clinic-leaf);
+    border-color: var(--clinic-leaf);
+}
+
+.btn-leaf:hover,
+.btn-leaf:focus-visible {
+    color: #fff;
+    background: #185943;
+    border-color: #185943;
+}
+
+.btn-outline-leaf {
+    color: var(--clinic-green);
+    border-color: var(--clinic-green);
+}
+
+.btn-outline-leaf:hover {
+    color: #fff;
+    background: var(--clinic-green);
+}
+
+.btn-warm {
+    color: #33220a;
+    background: var(--clinic-warm);
+    border-color: var(--clinic-warm);
+    font-weight: 700;
+}
+
+.btn-warm:hover {
+    color: #241500;
+    background: #f8c978;
+    border-color: #f8c978;
+}
+
+.text-leaf {
+    color: var(--clinic-leaf);
+}
+
+.eyebrow {
+    color: var(--clinic-leaf);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, #f1f8f4, #fff 60%, #e5f1eb);
+}
+
+.hero-art {
+    color: var(--clinic-green);
+    background: #e4f1e9;
+    border: 1px solid #d4e7db;
+}
+
+.hero-art img {
+    max-height: 330px;
+}
+
+.feature-card,
+.service-card {
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.feature-card:hover,
+.service-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(22, 75, 67, .12) !important;
+}
+
+.feature-icon {
+    display: inline-grid;
+    width: 3rem;
+    height: 3rem;
+    place-items: center;
+    color: var(--clinic-leaf);
+    background: var(--clinic-pale);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+}
+
+.service-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    background: #eaf4ee;
+}
+
+.service-detail-art {
+    background: #eaf4ee;
+}
+
+.service-detail-art img {
+    max-height: 390px;
+    margin-inline: auto;
+}
+
+.clinic-cta {
+    color: #fff;
+    background: var(--clinic-green);
+}
+
+.clinic-aside {
+    color: #fff;
+    background: linear-gradient(145deg, #164b43, #28765d);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+    border-color: #55a985;
+    box-shadow: 0 0 0 .25rem rgba(35, 122, 98, .2);
+}
+
+:focus-visible {
+    outline: 3px solid #ffca70;
+    outline-offset: 3px;
+}
+
+@media (max-width: 575.98px) {
+    .hero-section {
+        padding-block: 2rem !important;
+    }
+
+    .service-image {
+        height: 170px;
+    }
+
+    .clinic-cta .btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    .feature-card:hover,
+    .service-card:hover {
+        transform: none;
+    }
+}
+/* Телефон в шапке */
+.clinic-phone {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50px;
+    padding: 10px 14px;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+}
+
+.clinic-phone:hover {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Новый футер */
+.clinic-footer {
+    background: #123e37;
+    color: #ffffff;
+}
+
+.footer-brand {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-brand:hover {
+    color: #f3b95f;
+}
+
+.footer-heading {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footer-description {
+    color: #c9ded6;
+    line-height: 1.7;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-menu li {
+    margin-bottom: 10px;
+}
+
+.footer-menu a,
+.footer-email {
+    color: #c9ded6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-menu a:hover,
+.footer-email:hover {
+    color: #f3b95f;
+}
+
+.footer-phone {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.footer-phone:hover {
+    color: #f3b95f;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.footer-copyright {
+    color: #a9c6ba;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 991.98px) {
+    .clinic-phone {
+        margin-bottom: 10px;
+    }
+}
+/* Заметный логотип клиники */
+.clinic-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    padding: 6px 0;
+    transition: transform 0.2s ease;
+}
+
+.clinic-logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    background: #ffffff;
+    border-radius: 16px;
+    font-size: 29px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.clinic-logo-text {
+    color: #ffffff;
+    font-size: 1.65rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+}
+
+.clinic-logo:hover {
+    transform: translateY(-2px);
+}
+
+.clinic-logo:hover .clinic-logo-text {
+    color: #f3c777;
+}
+
+/* Компактнее на телефонах */
+@media (max-width: 575.98px) {
+    .clinic-logo-icon {
+        width: 43px;
+        height: 43px;
+        font-size: 24px;
+        border-radius: 12px;
+    }
+
+    .clinic-logo-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .clinic-logo {
+        transition: none;
+    }
+}
