@@ -218,3 +218,56 @@ body {
         font-size: 1.35rem;
     }
 }
+/* Исправление оформления футера */
+
+.clinic-footer {
+    background-color: #123e37;
+    color: #ffffff;
+}
+
+.clinic-footer .footer-description,
+.clinic-footer .footer-copyright {
+    color: #d5e7df;
+}
+
+.clinic-footer .footer-heading {
+    color: #ffffff;
+}
+
+.clinic-footer .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.clinic-footer .footer-menu li {
+    margin-bottom: 12px;
+}
+
+.clinic-footer .footer-menu a,
+.clinic-footer .footer-email {
+    color: #d5e7df;
+    text-decoration: none;
+}
+
+.clinic-footer .footer-menu a:hover,
+.clinic-footer .footer-email:hover {
+    color: #f3b95f;
+    text-decoration: underline;
+}
+
+.clinic-footer .footer-brand,
+.clinic-footer .clinic-logo-text,
+.clinic-footer .footer-phone {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.clinic-footer .footer-brand:hover,
+.clinic-footer .footer-phone:hover {
+    color: #f3b95f;
+}
+
+.clinic-footer .footer-divider {
+    border-color: rgba(255, 255, 255, 0.3);
+}
