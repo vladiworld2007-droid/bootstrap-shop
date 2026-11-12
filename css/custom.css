@@ -271,3 +271,39 @@ body {
 .clinic-footer .footer-divider {
     border-color: rgba(255, 255, 255, 0.3);
 }
+/* Иконки контактов в футере */
+.clinic-footer .footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+}
+
+.clinic-footer .footer-contact-item .bi {
+    font-size: 1em;
+    line-height: 1;
+    flex-shrink: 0;
+    color: #f3b95f;
+}
+
+.clinic-footer .footer-contact-item span {
+    overflow-wrap: anywhere;
+}
+/* Иконки в футере */
+.clinic-footer .footer-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+}
+
+.clinic-footer .footer-contact-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.2em;
+    font-size: 1em;
+    line-height: 1;
+    flex-shrink: 0;
+    color: #f3b95f;
+}
