@@ -166,6 +166,43 @@
         </div>
       </div>
     </section>
+<section class="container py-5" id="reviews" aria-labelledby="reviews-heading">
+  <div class="row g-4">
+    <div class="col-lg-7">
+      <p class="eyebrow">Мнения посетителей</p>
+      <h2 id="reviews-heading" class="fw-bold">Отзывы о клинике</h2>
+      <p class="text-secondary">Демонстрационные отзывы сохраняются только в вашем браузере.</p>
+      <div id="reviews-list" class="d-grid gap-3" aria-live="polite"></div>
+    </div>
+    <div class="col-lg-5">
+      <div class="card border-0 shadow-sm"><div class="card-body p-4">
+        <h3 class="h5">Оставить отзыв</h3>
+        <form id="review-form">
+          <div class="mb-3"><label class="form-label" for="review-name">Ваше имя</label><input class="form-control" id="review-name" maxlength="60" required></div>
+          <div class="mb-3"><label class="form-label" for="review-rating">Оценка</label><select class="form-select" id="review-rating" required><option value="">Выберите оценку</option><option value="5">★★★★★ — 5</option><option value="4">★★★★☆ — 4</option><option value="3">★★★☆☆ — 3</option><option value="2">★★☆☆☆ — 2</option><option value="1">★☆☆☆☆ — 1</option></select></div>
+          <div class="mb-3"><label class="form-label" for="review-text">Ваш отзыв</label><textarea class="form-control" id="review-text" maxlength="500" rows="4" required></textarea></div>
+          <button class="btn btn-leaf" type="submit">Опубликовать отзыв</button>
+        </form>
+      </div></div>
+    </div>
+  </div>
+</section>
+<section class="container py-5" id="pet-card" aria-labelledby="pet-heading">
+  <div class="row g-4 align-items-start">
+    <div class="col-lg-5"><p class="eyebrow">Удобно для владельца</p><h2 id="pet-heading" class="fw-bold">Электронная карточка питомца</h2><p class="text-secondary">Создайте карточку с основными сведениями. Она хранится только в этом браузере, не является медицинской картой и не передаётся клинике.</p></div>
+    <div class="col-lg-7"><div class="card border-0 shadow-sm"><div class="card-body p-4">
+      <form id="pet-form" class="row g-3">
+        <div class="col-sm-6"><label class="form-label" for="pet-card-name">Кличка</label><input class="form-control" id="pet-card-name" maxlength="60" required></div>
+        <div class="col-sm-6"><label class="form-label" for="pet-card-type">Вид животного</label><select class="form-select" id="pet-card-type"><option>Кошка</option><option>Собака</option><option>Другое</option></select></div>
+        <div class="col-sm-6"><label class="form-label" for="pet-card-age">Возраст, лет</label><input class="form-control" id="pet-card-age" type="number" min="0" max="60" step="0.1" required></div>
+        <div class="col-sm-6"><label class="form-label" for="pet-card-weight">Вес, кг</label><input class="form-control" id="pet-card-weight" type="number" min="0.1" max="500" step="0.1" required></div>
+        <div class="col-12"><label class="form-label" for="pet-card-vaccines">Вакцинации (необязательно)</label><textarea class="form-control" id="pet-card-vaccines" rows="2" maxlength="500" placeholder="Например: бешенство — март 2026"></textarea></div>
+        <div class="col-12 d-flex gap-2 flex-wrap"><button class="btn btn-leaf" type="submit">Сохранить карточку</button><button class="btn btn-outline-secondary" id="pet-delete" type="button">Удалить карточку</button></div>
+      </form>
+      <div id="pet-preview" class="mt-4" aria-live="polite"></div>
+    </div></div></div>
+  </div>
+</section>
   </main>
   <footer class="clinic-footer mt-auto">
     <div class="container py-5">
@@ -261,6 +298,14 @@
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js" defer></script>
+<div class="clinic-chat" id="clinic-chat">
+  <button class="clinic-chat-toggle btn btn-leaf shadow" id="chat-toggle" type="button" aria-controls="chat-panel" aria-expanded="false">💬 Консультант</button>
+  <section class="clinic-chat-panel card shadow-lg d-none" id="chat-panel" aria-label="Демонстрационный чат с консультантом">
+    <div class="card-header d-flex justify-content-between align-items-center"><strong>🐾 Помощник клиники</strong><button class="btn-close" id="chat-close" type="button" aria-label="Закрыть чат"></button></div>
+    <div class="card-body"><p class="small text-secondary">Автоответчик: сообщения не отправляются сотрудникам клиники. При срочных вопросах позвоните нам.</p><div id="chat-messages" class="clinic-chat-messages" role="log" aria-live="polite"><div class="chat-bubble chat-bubble-bot">Здравствуйте! Спросите про часы работы, цены, запись или адрес.</div></div></div>
+    <form id="chat-form" class="card-footer d-flex gap-2"><label for="chat-input" class="visually-hidden">Ваш вопрос</label><input id="chat-input" class="form-control" maxlength="300" placeholder="Ваш вопрос..." required><button class="btn btn-leaf" type="submit">➤<span class="visually-hidden">Отправить</span></button></form>
+  </section>
+</div>
 </body>
 
 </html>
